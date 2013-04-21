@@ -22,6 +22,7 @@ end
 if ARGV[0].nil?
   search_chat_name() if ARGV[0].nil?
   puts '上記の中からbotを潜入させたいchat_id(ex.#hoge/$fuga;xxxxxxx)を第一引数に指定してください'
+  puts '引数的にエスケープすべきな文字はエスケープしてください'
   exit
 end
 ARGV[1] ||= 'www'
